@@ -95,14 +95,27 @@ ol li
 
 #main
 { padding: 30px 0px;
-  background: transparent url(../images/background.jpg) no-repeat;}
+  
+  
+  
+  background-color:#E5E4D7;
+  }
+  
+  
   
 header
 { height: 385px;
   width: 940px;
   border-radius: 15px 15px 0px 0px;
   -moz-border-radius: 15px 15px 0px 0px;
-  -webkit-border: 15px 15px 0px 0px;  }
+  -webkit-border: 15px 15px 0px 0px;  
+  
+  
+  background-color: #2c6700;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  }
  
 nav
 { height: 50px;}  
@@ -172,13 +185,17 @@ ul#nav li.current a, ul#nav li:hover a
 { width: 940px;
   overflow: hidden;
   margin-bottom: 30px;
-  background: transparent url(../images/transparent.png) repeat;
+  
+  
   border-radius: 0px 0px 15px 15px;
   -moz-border-radius: 0px 0px 15px 15px;
   -webkit-border: 0px 0px 15px 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;} 
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+  
+  background-color: #2c6700;
+  } 
 
 .sidebar_container
 { float: right;
