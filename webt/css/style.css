@@ -12,8 +12,10 @@ html
   padding: 0;}
 
 body
-{ font: normal 80% Arial, Helvetica, sans-serif;
-  color: #000;
+{
+	font: normal 80% Arial, Helvetica, sans-serif;
+	color: #060;
+	background-color:#000;
 }
 
 /* tell the browser to render HTML 5 elements as block */
@@ -62,7 +64,13 @@ text-align:justify;
 text-decoration:underline;
 font-size:18px;
 }
-  
+ 
+ h8
+ {font:"Times New Roman", Times, serif;
+ font-size:16px;
+ color:#FFF;
+ }
+ 
 span
 { color: #006600;
   text-shadow: 0px 1px 0px #FFF;}
@@ -95,31 +103,18 @@ ol li
 
 #main
 { padding: 30px 0px;
-  
-  
-  width:940px;
-  
-  background-color:#E5E4D7;
-  }
-  
-  
-body
-{
-	background-color:#E5E4D7;
-}  
+  background-color:#009900;
+  background: -moz-linear-gradient(#000,#303);
+  background: -o-linear-gradient(#000,#303);
+  background: -webkit-linear-gradient(#000,#303);
+ }
   
 header
-{ 
+{ height: 385px;
+  width: 940px;
   border-radius: 15px 15px 0px 0px;
   -moz-border-radius: 15px 15px 0px 0px;
-  -webkit-border: 15px 15px 0px 0px;  
-  
-  
-  background-color: #2c6700;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  }
+  -webkit-border: 15px 15px 0px 0px;  }
  
 nav
 { height: 50px;}  
@@ -186,20 +181,16 @@ ul#nav li.current a, ul#nav li:hover a
   text-shadow: none;}
 
 #site_content
-{ 
+{ width: 940px;
   overflow: hidden;
   margin-bottom: 30px;
-  
-  
+  background: transparent url(../images/transparent.png) repeat;
   border-radius: 0px 0px 15px 15px;
   -moz-border-radius: 0px 0px 15px 15px;
   -webkit-border: 0px 0px 15px 15px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
   -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
-  
-  background-color: #2c6700;
-  } 
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;} 
 
 .sidebar_container
 { float: right;
