@@ -40,8 +40,15 @@ h1, h2, h3, h4, h5, h6
   color: #FFF;
   text-shadow: 0px 1px 0px #000;
   letter-spacing: -1px;
+  color:#FFF;
   margin: 0 0 10px 0;}
 
+h1
+{
+	font-size:26px;
+	font-weight:bold;
+	font-family:Georgia, "Times New Roman", Times, serif;	
+	}
 h3
 { font: normal 130% Arial, Helvetica, sans-serif;}
 
@@ -66,7 +73,10 @@ font-size:18px;
 }
  
  h8
- {font:"Times New Roman", Times, serif;
+ {
+	 font:Century Schoolbook;
+	 text-align:justify;
+	 line-height:30px;
  font-size:16px;
  color:#FFF;
  }
