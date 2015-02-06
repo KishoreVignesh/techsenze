@@ -1,21 +1,91 @@
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
 
 <script>
-$(document).ready(function() {
-// Your code here.
-$("#techsenzetitle_2K15").hover(function(){
-	
-	$( "#techsenzetitle_2K15" ).animate({
-		transform: "rotate(330deg)" },1000);
-},function(){
-	
-	$( "#techsenzetitle_2K15" ).animate({
-		transform: "rotate(-30deg)"},1000)
-});
+	$(document).ready(function() {
 
-}
+		$("#techsenzetitle_2K15").mouseenter(function() {
+
+			$("#techsenzetitle_2K15").animate({
+
+				left : "20px",
+				bottom : "20px"
+			}, 500);
+			//console.log("The function enters!");
+		});
+
+		$("#techsenzetitle_2K15").mouseleave(function() {
+
+			$("#techsenzetitle_2K15").animate({
+
+				left : "0px",
+				bottom : "0px"
+			}, 500);
+			//console.log("The function leaves!");
+		});
+
+		$("#techsenzetitle_t").hover(function() {
+
+			$(this).animate({
+				fontSize : "190px",
+			}, 500);
+
+		}, function() {
+			$(this).animate({
+				fontSize : "170px",
+			}, 500);
+		});
+
+		$("#techsenzetitle_s").hover(function() {
+
+			$(this).animate({
+				fontSize : "125px",
+			}, 500);
+
+		}, function() {
+			$(this).animate({
+				fontSize : "105px",
+			}, 500);
+		});
+
+		$("#techsenzetitle_z").hover(function() {
+
+			$(this).animate({
+				fontSize : "120px",
+			}, 500);
+
+		}, function() {
+			$(this).animate({
+				fontSize : "100px",
+			}, 500);
+		});
+
+		$("#techsenzetitle_ech").hover(function() {
+			$(this).css("color", "#FF3333");
+		}, function() {
+			$(this).css("color", "red");
+		});
+
+		$("#techsenzetitle_en").hover(function() {
+			$(this).css("color", "#FFFF4D");
+		}, function() {
+			$(this).css("color", "yellow");
+		});
+
+		$("#techsenzetitle_e").hover(function() {
+			$(this).css("color", "#0066FF");
+		}, function() {
+			$(this).css("color", "blue");
+		});
+
+		$("#mcetitle").hover(function() {
+			$(this).css("color", "#191919");
+		}, function() {	
+			$(this).css("color", "black");
+		});
+
+		
+	});
+
 </script>
 
 <style type="text/css">
@@ -24,17 +94,7 @@ $("#techsenzetitle_2K15").hover(function(){
 		font-family: Arial, Helvetica, sans-serif;
 		text-align: center;
 		position: relative;
-		bottom: 40px;
-		letter-spacing: 2px;
-	}
-
-	#header_new #csetitle {
-		display: inline-block;
-		font-family: Arial, Helvetica, sans-serif;
-		text-align: center;
-		position: relative;
-		bottom: 40px;
-		padding-left: 20px;
+		bottom: 20px;
 		letter-spacing: 2px;
 	}
 
@@ -55,17 +115,16 @@ $("#techsenzetitle_2K15").hover(function(){
 	}
 
 	#mcelogo span {
-		font-weight: normal;;
-		font-size: 60px;
 		display: block;
-		font-weight: normal;
+		font-size: 38px;
+		font-weight: bold;
 	}
 
 	#techsenzetitle {
 		font-family: Arabic Typesetting;
 		font-size: 150px;
 		font-variant: small-caps;
-		font-weight:bold;
+		font-weight: bold;
 		letter-spacing: 2px;
 		color: #D5E1DD;
 		text-shadow: 5px 1px 10px black, -5px -1px 10px white;
@@ -74,29 +133,54 @@ $("#techsenzetitle_2K15").hover(function(){
 
 	#techsenzetitle #techsenzetitle_t {
 		font-size: 170px;
-		font-family:Arabic Typesetting;
+		font-family: Arabic Typesetting;
 		color: red;
+	}
+
+	#techsenzetitle #techsenzetitle_ech {
+		color: red;
+	}
+
+	#techsenzetitle #techsenzetitle_en {
+		color: yellow;
+	}
+
+	#techsenzetitle #techsenzetitle_e {
+		color: blue;
 	}
 
 	#techsenzetitle #techsenzetitle_s {
 		font-size: 105px;
-		font-family:Papyrus;
+		font-family: Papyrus;
 		color: yellow;
 	}
 
 	#techsenzetitle #techsenzetitle_z {
 		font-size: 100px;
-		font-family:Algerian;
+		font-family: Algerian;
 		color: blue;
 	}
 
 	#techsenzetitle #techsenzetitle_2K15 {
 		font-size: 60px;
 		color: red;
-		font-family:Colonna MT;
-		display:inline-block;
-		padding-left:20px;
+		font-family: Colonna MT;
+		display: inline-block;
+		padding-left: 20px;
 		transform: rotate(-30deg);
+		position: relative;
+	}
+
+	#techsenzetitle img {
+		left: 140px;
+		position: relative;
+		z-index: -1;
+		transform: rotate(-10deg);
+	}
+
+	#techsenzetitle_all {
+		bottom: 80px;
+		position: relative;
 	}
 
 </style>
@@ -106,17 +190,16 @@ $("#techsenzetitle_2K15").hover(function(){
 	<div id="mcelogo">
 		<img src="images/logo.png"/>
 		<div id="mcetitle">
-			<span >Meenakshi</span> College Of Engineering
+			<span>Meenakshi College Of Engineering</span>
+			Department of Computer Science And Engineering
+			<br/>
+			presents
 		</div>
-		<div id="csetitle">
-			<span>Department of</span> Computer Science And Engineering
-		</div>
-		<br/>
-		presents
 	</div>
 
 	<div id="techsenzetitle">
-		<span id="techsenzetitle_t">T</span><span id="techsenzetitle_ech">ech</span><span id="techsenzetitle_s">S</span><span id="techsenzetitle_en">en</span><span id="techsenzetitle_z">Z</span><span id="techsenzetitle_e">e</span><span id="techsenzetitle_2K15"> 2K15</span>
+		<img src="images/techsenzelogo.png"/>
+		<span id="techsenzetitle_all"> <span id="techsenzetitle_t">T</span><span id="techsenzetitle_ech">ech</span><span id="techsenzetitle_s">S</span><span id="techsenzetitle_en">en</span><span id="techsenzetitle_z">Z</span><span id="techsenzetitle_e">e</span><span id="techsenzetitle_2K15"> 2K15</span> </span>
 	</div>
 
 </div>
